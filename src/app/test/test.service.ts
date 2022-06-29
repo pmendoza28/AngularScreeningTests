@@ -20,8 +20,8 @@ export class TestService {
     the returned customerId in the component customerId property
    * @method callCustomerApi - this method is posting a customer data to the backend server 
    * and expecting a customerId property response
-   * @param name - this property is . 
-   * @param email - this customer parameter is consiting of name and email property. 
+   * @param name - this is a parameter of callCustomerApi in the body. 
+   * @param email - this is a parameter of callCustomerApi in the body. 
    */
   name: string | undefined;
   email: string | undefined;
