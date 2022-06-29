@@ -1,0 +1,12 @@
+<!-- Child Component Selector -->
+<!-- the test data property value is passing to AppTestChildComponent through @Input parentData property -->
+<!-- the onButtonClicked method is expecting data from the AppTestChildComponent through @Output passDataToParent -->
+<app-test-child [parentData]="testData" (passDataToParent)="onButtonClicked($event)"></app-test-child>
+
+<h1>Some Amazing Heading</h1>
+<div class="my-element" (window:resize)="onResize()" #myElementDiv >Some text
+    {{elementWidth}}
+</div>
+
+<!-- this button on click event, the div that having class name of my-element will remove its specific class name my-element  -->
+<button (click)="removeMyElementClass()">Remove Class</button>
