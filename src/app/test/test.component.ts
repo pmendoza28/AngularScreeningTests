@@ -62,6 +62,10 @@ export class TestComponent implements OnInit {
     this.testData = "Some Data"
   }
 
+  ngOnDestroy(): void {
+    this.subs.unsubscribe()
+  }
+
   /************************************* QUESTION NO 4 START ****************************************
    * @QUESTION_NO_4 - getting the width of the .my-element element in the HTML and storing this value in the elementWidth property
    * @property elementWidth - this property will be storage of the elementWidth Value
